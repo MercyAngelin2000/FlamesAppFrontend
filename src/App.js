@@ -12,7 +12,7 @@ function App() {
       boyName: boyName,
       girlName: girlName
     };
-    axios.post("http://127.0.0.1:8000/check", userData).then((response) => {
+    axios.post("https://flamesappbackend.onrender.com/check", userData).then((response) => {
       setResult(response)
     });
   }
