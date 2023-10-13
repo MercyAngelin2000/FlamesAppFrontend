@@ -33,3 +33,10 @@ body {
   border: none;
   color: white;
 }
+.head{
+  color: #a40b9c;
+  font-family: cursive;
+  font-size: larger;
+  margin-top: 35px;
+  margin-bottom: 85px;
+}
