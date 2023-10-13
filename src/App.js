@@ -43,9 +43,9 @@ function App() {
       const temp = [];
       let x = overallLength;
       if (overallLength > flames?.length) {
-        x %= flames?.length;
+        x = x % flames?.length;
         if(x===0){
-          temp?.push(...flames?.pop())
+          temp?.push(...flames?.slice(0, -1))
         }
         else{
           temp?.push(...flames?.slice(x, flames.length), ...flames?.slice(0, x - 1));
